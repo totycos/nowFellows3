@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NowFellows2</title>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= google_webfonts_init({google: ['Roboto']}) %>
+
+  </head>
+
+  <body>
+    <p class=“notice  alert-success”><%= notice %></p>
+    <p class=“alert  alert-success”><%= alert %></p>
+    <%= yield %>
+  </body>
+</html>

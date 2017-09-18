@@ -1,0 +1,381 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body{
+  background-image: image-url("fond5.png");
+  background-repeat: no-repeat;
+  background-position: center 0px;
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  height: auto;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+/*####### CONNEXION PAGES ######## */
+
+.main{
+  border-radius: 10px;
+  color: white;
+  vertical-align: middle;
+  width: 500px;
+  height:100%;
+  margin: auto;
+  display: inline-block;
+}
+
+#containerLogo{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#logo{
+  width: 250px;
+}
+
+.containerTitle{
+  background-color: #0D436C;
+  height: 60px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.title{
+  font-size: 18px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  padding-top: 16px;
+}
+
+input{
+  padding: 3px;
+}
+
+.containerConnexion{
+  width: 100%;
+  background-color: rgba(13, 67, 108, 0.3);
+  padding-top: 30px;
+  padding-bottom: 15px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.social-buttons{
+  width: 215px;
+  margin: auto;
+  padding-bottom: 20px;
+  padding-top: 0px;
+}
+
+.btn-linkedin{
+  line-height: 30px;
+  height: 50px;
+}
+
+.fa-linkedin{
+  padding-top: 6px;
+}
+
+.btn-linkedin>a{
+  padding-top: 10px;
+}
+
+#line1, #ou, #line2{
+  display: inline-block;
+}
+
+#line1, #line2{
+  width: 60px;
+}
+
+#line1 {
+  margin-right: 15px;
+}
+
+#ou {
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+#line2 {
+  margin-left: 15px;
+}
+
+#creerCompteManuellement {
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+.contentConnexion{
+  width: 500px;
+  margin: auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.firstname, .secondname{
+  display: inline-block;
+  width: 180px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+#user_name, #user_surname{
+  background-color: rgba(255, 255, 255, 0.4);
+  border: white solid 0px;
+  border-radius: 5px;
+}
+
+#user_email, #user_password, #user_password_confirmation{
+  background-color: rgba(255, 255, 255, 0.4);
+  border: white solid 0px;
+  border-radius: 5px;
+  width: 343px;
+}
+
+.validationButton{
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.btn{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.iconeMail{
+  background-image: image-url("iconeMail.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+
+/* ######## PROFIL PAGES ######## */
+
+#mainProfil{
+  background-color: #FBFBFB;
+}
+
+.containerProfil{
+  background-color: #FBFBFB;
+  color: #232323;
+}
+
+.roundedImage{
+    overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    width:90px;
+    height:90px;
+    margin-top: 10px;
+    border: 2px solid #FBFBFB;
+}
+
+.containerPhoto{
+  width: 90px;
+  margin: auto;
+}
+
+#imageProfil{
+  width: 90px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.nav{
+  background-color: none;
+}
+
+.nav > li > a{
+  padding: 0px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus{
+    background-color: transparent;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+  background-color: transparent;
+}
+
+.dropdown-menu{
+  min-width: 60px;
+  border: 2px solid #FBFBFB;
+  -webkit-border-radius:50px;
+  -moz-border-radius:50px;
+  border-radius:50px;
+  width:90px;
+  height:90px;
+  padding-top: 20px;
+  padding-left: -10px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  margin-top: -90px;
+  background-color: white;
+}
+
+.dropdown-menu > li > a{
+  font-weight: bold;
+  margin-top: 14px;
+  color: #337ab7;
+}
+
+#iconEdit2{
+  width: 35px;
+  float: right;
+  margin-top: -60px;
+  margin-right: 10px;
+}
+
+.nameProfil{
+  font-size: 18px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  padding-top: 46px;
+}
+
+.skills{
+  border-top: 1px solid #F4F4F4;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.iconeSkills, .titleSkills{
+  display: inline-block;
+  font-Weight: bold;
+}
+
+#iconeSkills{
+  width: 30px;
+}
+
+.love{
+  border-top: 1px solid #F4F4F4;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.iconeLove, .titleLove{
+  display: inline-block;
+  font-Weight: Bold;
+}
+
+#iconeLove{
+  width: 30px;
+}
+
+.empty{
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  position: fixed;
+  background-color: #FBFBFB;
+  z-index: -1;
+}
+
+.onglets{
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  width: 500px;
+}
+
+.ongletChat, .ongletProfil{
+  width: 250px;
+  height: 80px;
+  margin: 0px;
+  padding: 0px;
+  border-top: #F4F4F4 solid 1px;
+}
+
+.ongletChat2, .ongletProfil2{
+  width: 250px;
+  height: 80px;
+  margin: 0px;
+  padding: 0px;
+  border-top: #F4F4F4 solid 1px;
+}
+
+.ongletChat{
+  background-color: #FBFBFB;
+}
+
+.ongletChat2{
+  background-color: #F4F4F4;
+}
+
+.ongletProfil{
+  background-color: #F4F4F4;
+}
+
+.ongletProfil2{
+  background-color: #FBFBFB;
+}
+
+#iconeChat{
+  width: 70px;
+  margin-top: 15px;
+}
+
+#iconeProfil{
+  width: 40px;
+  margin-top: 15px;
+}
+
+
+/* ######## CHAT PAGES ######## */
+
+.containerMarc, .containerUser{
+  display: inline-block;
+}
+
+.containerMarc{
+  width: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+
+.photoMarc{
+
+}
+
+.containerUser{
+  width: 90px;
+  margin-left: -30px;
+}
+
+.photoUser{
+
+}
+
+
+/* ###########################*/
+/* QUERIES CONNEXION PAGES */
+/* ###########################*/
+
+@media screen and (max-width: 500px) {
+  .main {
+    width: 100%;
+  }
+
+  .containerTitle{
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+
+  .containerConnexion{
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+}

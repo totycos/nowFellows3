@@ -1,0 +1,64 @@
+<div id=containerLogo>
+  <%= image_tag("logo.png", id: "logo")%>
+</div>
+
+<div class="main">
+
+  <div class="containerTitle">
+    <p class=title>Sign up</p>
+  </div>
+
+  <div class=containerConnexion>
+
+    <div class="social-buttons">
+      <%= link_to raw('<span class="fa fa-linkedin"></span>Se connecter via linkedin'), user_linkedin_omniauth_authorize_path, :class => 'btn btn-block btn-social btn-linkedin' %>
+    </div>
+
+    <div id="line1"><hr></div>
+    <p id="ou"> OU </p>
+    <div id="line2"><hr></div>
+
+    <p id="creerCompteManuellement"> Créer un compte manuellement </p>
+
+    <div class=contentConnexion>
+
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+          <%= devise_error_messages! %>
+
+          <div class="form-group firstname">
+            <%= f.label :name %><br />
+            <%= f.text_field :name, autofocus: true %>
+          </div>
+
+          <div class="form-group secondname">
+            <%= f.label :surname %><br />
+            <%= f.text_field :surname, autofocus: true %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :email %><br />
+            <%= f.email_field :email, autofocus: true %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :password %>
+            <% if @minimum_password_length %>
+            <em>(<%= @minimum_password_length %> characters minimum)</em>
+            <% end %><br />
+            <%= f.password_field :password, autocomplete: "off" %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :password_confirmation %><br />
+            <%= f.password_field :password_confirmation, autocomplete: "off" %>
+          </div>
+
+          <div class="validationButton">
+            <%= f.submit "Sign up", :class => "btn btn-primary" %>
+          </div>
+        <% end %>
+        <%= render "devise/shared/links" %>
+      </div>
+
+  </div>
+</div>

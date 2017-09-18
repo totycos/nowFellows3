@@ -1,0 +1,20 @@
+image: ruby:2.3
+
+before_script:
+  - gem install bundler --pre
+  - bundle install
+
+stages:
+  - deploy
+
+production_deploy:
+  type: deploy
+  script:
+  - gem install dpl
+  - dpl --provider=heroku --app=now-fellows --api-key=$HEROKU_PRODUCTION_API_KEY
+
+  environment:
+    name: production
+    url: https://now-fellows.herokuapp.com
+  only:
+  - master

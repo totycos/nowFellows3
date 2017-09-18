@@ -1,0 +1,29 @@
+<div class="main" id="mainProfil">
+
+  <div class="containerTitle">
+    <div class="containerMarc">
+      <div class="roundedImage" class="photoMarc"><%= image_tag("sangoku.jpg", id: "imageProfil") %></div>
+    </div>
+    <div class="containerUser">
+      <div class="roundedImage" class="photoUser"><%= image_tag("vegeta.jpg", id: "imageProfil") %></div>
+    </div>
+  </div>
+
+  <div class=containerProfil>
+
+    <div class="empty">
+
+    </div>
+
+    <div class=onglets>
+      <%= link_to chat_path do %>
+        <div class=ongletChat2><%= image_tag("iconeChat2.png", id: "iconeChat") %></div>
+      <% end %>
+      <%= link_to profil_path do %>
+        <div class=ongletProfil2><%= image_tag("iconeProfil2.png", id: "iconeProfil") %></div>
+      <% end %>
+    </div>
+
+  </div>
+
+</div>

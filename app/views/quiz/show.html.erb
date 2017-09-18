@@ -1,0 +1,27 @@
+<div id="page">
+    <h1>Quiz de présentation</h1>
+    <br />
+    <br />
+    <div id="presentation-game">
+        <a href="#" id="left-choice" class="choice-answer" data-answer="no">
+            <%= image_tag("img/arrowred.png", id: "left-choice-img")  %>
+        </a>
+        <div id="choice">
+            <p id="choice-detail">Pour mieux te connaître, nous allons te poser quelques questions rapides.
+                <br /> Dès que tu es prêt, appuie sur une des 2 flèches latérales</p>
+            <%= image_tag("img/trust2.png", id: "choice-img")  %>
+        </div>
+        <a href="#" id="right-choice" class="choice-answer" data-answer="yes">
+            <%= image_tag("img/arrowgreen.png", id: "right-choice-img")  %>
+        </a>
+    </div>
+</div>
+<br />
+<br />
+<div id="timer">
+    <div id="timer-container">
+        <p id="timer-txt"></p>
+        <div id="timer-progress">
+        </div>
+    </div>
+</div>

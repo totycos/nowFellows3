@@ -1,0 +1,46 @@
+<div class="main" id="mainProfil">
+
+  <div class="containerTitle">
+    <div class="containerPhoto">
+      <ul class="nav nav-pills">
+        <li class="dropdown" >
+          <a href="#"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">  <div class="roundedImage"><%= image_tag("vegeta.jpg", id: "imageProfil") %></div></a>
+          <ul class="dropdown-menu">
+            <li class="logOut"><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class=iconEdit><%= link_to image_tag("edit.png", id: "iconEdit2"), edit_user_registration_path %></div>
+  </div>
+
+
+
+  <div class=containerProfil>
+    <p class=nameProfil><%= current_user.name %> <%= current_user.surname %></p>
+    <div class=skills>
+      <div class=iconeSkills> <%= image_tag("etoile.png", id: "iconeSkills") %> </div>
+      <div class=titleSkills><p class=titleSkills2> Compétences</p> </div> </br>
+      <p>#BigBangAttack #SSBlue #Bagarre</p>
+    </div>
+
+    <div class=love>
+      <div class=iconeLove> <%= image_tag("coeur.png", id: "iconeLove") %> </div>
+      <div class=titleLove><p class=titleLove2> Ce que je veux apprendre</p> </div> </br>
+      <p>#Téléportation #Cuisine #Bagarre</p>
+    </div>
+
+    <div class="empty">
+  
+    </div>
+
+    <div class=onglets>
+        <%= link_to chat_path do %>
+      <div class=ongletChat><%= image_tag("iconeChat2.png", id: "iconeChat") %></div>
+      <% end %>
+        <div class=ongletProfil><%= image_tag("iconeProfil2.png", id: "iconeProfil") %></div>
+    </div>
+
+  </div>
+
+</div>

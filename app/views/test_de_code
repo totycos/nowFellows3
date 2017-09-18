@@ -1,0 +1,3 @@
+<div class="social-buttons">
+    <%= link_to raw('<span class="iconeMail"></span> Connect with email'), new_user_session_path, :class => 'btn btn-block btn-social btn-vk' %>
+</div>

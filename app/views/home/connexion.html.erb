@@ -1,0 +1,25 @@
+<div id=containerLogo>
+  <%= image_tag("logo.png", id: "logo")%>
+</div>
+
+<div class="main">
+  <div class="containerTitle">
+    <p class=title>Sign up</p>
+  </div>
+  <div class=containerConnexion>
+      <div class=contentConnexion>
+          <h3 class=baseline>
+              First </br>
+              platform to </br>
+              help you </br>
+              learn, live </br>
+              and share.
+          </h3>
+      </div>
+      <div class="social-buttons">
+          <%= link_to raw('<span class="iconeMail"></span> Connect with email'), new_user_session_path, :class => 'btn btn-block btn-social btn-vk' %>
+      </div>
+    
+
+  </div>
+</div>

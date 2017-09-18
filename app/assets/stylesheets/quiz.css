@@ -1,0 +1,70 @@
+body {
+	background-image: none;/*url(/assets/img/game-1.jpeg)!important;*/
+	background-size: 1200px 800px;
+	background-position: left 0px;
+	color: black;
+}
+
+#page {
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-flow: column wrap;
+	justify-content:space-around;
+	align-items: center;
+}
+
+#presentation-game{
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	max-width:1000px;
+}
+
+#choice{
+	width:75%;
+}
+
+.choice-answer {
+	width:8%;
+	height:8%;
+}
+
+.choice-answer img{
+	width: 100%;
+	height:100%;
+}
+
+#choice-detail {
+	width:100%;
+	text-align:center;
+}
+
+#choice-img{
+	height: ;
+}
+
+#timer {
+	width: 100%;
+	position:absolute;
+	bottom: 0;
+}
+
+#timer-progress{
+	height:1rem;
+	width:100%;
+	background-color: lightgreen;
+	position:absolute;
+	right:0;
+}
+
+#timer-txt{
+	position:absolute;
+	top:-2rem;
+}
+
+#timer-container{
+	width:100%;
+	height:1rem;
+	overflow: hidden;
+}

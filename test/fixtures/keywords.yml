@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 
+  text: MyString
+  img: MyString
+  skill: 1
+  interest: 1
+  'yes': MyString
+  'no': MyString
+
+two:
+  id: 
+  text: MyString
+  img: MyString
+  skill: 1
+  interest: 1
+  'yes': MyString
+  'no': MyString
